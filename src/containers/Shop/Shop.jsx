@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Product from "../../components/Product/Product";
 
 class Shop extends Component {
   state = {
@@ -26,12 +27,12 @@ class Shop extends Component {
           <div className="col-sm-2" />
           <div className="col-sm-8">
             {this.state.products.map((product) => (
-              <div key={product.id}>
-                <h1>
-                  {product.name} - {product.price}
-                </h1>
-                <p>{product.description.substring(0, 100)}...Read more</p>
-              </div>
+              <Product
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                description={product.description}
+              />
             ))}
           </div>
         </div>
