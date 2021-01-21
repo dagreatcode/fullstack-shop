@@ -20,6 +20,7 @@ class Login extends Component {
       // Make a API call to my user auth service
       // If success response
       // Redirect to Shop
+    //   debugger;
       this.props.history.push("/shop");
       // If error
       // Show Error
@@ -33,7 +34,7 @@ class Login extends Component {
           <div className="col-sm-6 text-center">
             <div className="row">
               <div className="col-sm-12 text-center">
-                <h1>Login</h1>
+                <h1>Please sign in below:</h1>
               </div>
             </div>
             <div className="row">
@@ -70,7 +71,7 @@ class Login extends Component {
                     />
                   </div>
                   <button type="submit" className="btn btn-primary">
-                    Submit
+                    Login
                   </button>
                 </form>
               </div>
