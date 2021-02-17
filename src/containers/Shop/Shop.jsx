@@ -10,7 +10,7 @@ class Shop extends Component {
   componentDidMount() {
     axios
       .get(
-       // "https://cors-anywhere.herokuapp.com/https://hub.dummyapis.com/products?noofRecords=10&idStarts=1001&currency=usd"
+        "https://cors-anywhere.herokuapp.com/https://hub.dummyapis.com/products?noofRecords=10&idStarts=1001&currency=usd"
       )
       .then((response) => {
         console.log(response.data);
@@ -25,7 +25,7 @@ class Shop extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-2" />
-          <a href="https://cors-anywhere.herokuapp.com/corsdemo">Please Wait...</a>
+          {/* <a href="https://cors-anywhere.herokuapp.com/corsdemo">Please Wait...</a> */}
           <div className="col-sm-8">
             {this.state.products.map((product) => (
               <div key={product.id}>
