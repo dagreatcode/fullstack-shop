@@ -13,7 +13,7 @@ class Shop extends Component {
         "https://cors-anywhere.herokuapp.com/https://hub.dummyapis.com/products?noofRecords=10&idStarts=1001&currency=usd"
       )
       .then((response) => {
-       console.log(response.data);
+        console.log(response.data);
         this.setState({
           products: response.data,
         });
@@ -25,9 +25,8 @@ class Shop extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-2" />
-          <div className="col-sm-8">
-          <h1>Shop</h1>
           <a href="https://cors-anywhere.herokuapp.com/corsdemo">Please Wait...</a>
+          <div className="col-sm-8">
             {this.state.products.map((product) => (
               <div key={product.id}>
                 <h1>
