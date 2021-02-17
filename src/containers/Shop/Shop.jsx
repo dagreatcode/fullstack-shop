@@ -25,8 +25,9 @@ class Shop extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-2" />
-          {/* <a href="https://cors-anywhere.herokuapp.com/corsdemo">Please Wait...</a> */}
           <div className="col-sm-8">
+          <h1>Shop:</h1>
+          <a href="https://cors-anywhere.herokuapp.com/corsdemo">Please Wait...</a>
             {this.state.products.map((product) => (
               <div key={product.id}>
                 <h1>
