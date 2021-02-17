@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <>
+
       <Router>
       <Navbar/>
         <Switch>
@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/" component={Home}/>
         </Switch>
       </Router>
-    </>
+
   );
 }
 

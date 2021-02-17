@@ -40,8 +40,8 @@ class Login extends Component {
             <div className="row">
               <div className="col-sm-12 text-center">
                 <form onSubmit={this.handleSubmit}>
-                  <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">
+                  <div className="form-group">
+                    <label for="exampleInputEmail1">
                       Email address
                     </label>
                     <input
@@ -53,12 +53,9 @@ class Login extends Component {
                       value={this.state.emailAddress}
                       onChange={this.handleInputChange}
                     />
-                    <div id="emailHelp" className="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
                   </div>
-                  <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">
+                  <div className="form-group">
+                    <label for="exampleInputPassword1">
                       Password
                     </label>
                     <input
