@@ -10,6 +10,7 @@ function App() {
 
       <Router>
       <Navbar/>
+      <h1>Hi: USER</h1>
         <Switch>
           <Route exact path="/shop" component={Shop}/>
           <Route exact path="/login" component={Login}/>
