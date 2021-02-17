@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import Product from "../../components/Product/Product";
 
 class Shop extends Component {
   state = {
-    products: []
+    products: [],
   };
 
   componentDidMount() {
@@ -26,8 +25,10 @@ class Shop extends Component {
         <div className="row">
           <div className="col-sm-2" />
           <div className="col-sm-8">
-          <h1>Shop:</h1>
-          <a href="https://cors-anywhere.herokuapp.com/corsdemo">Please Wait...</a>
+            <h1>Shop:</h1>
+            <a href="https://cors-anywhere.herokuapp.com/corsdemo">
+              Please Wait...
+            </a>
             {this.state.products.map((product) => (
               <div key={product.id}>
                 <h1>

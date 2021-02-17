@@ -15,16 +15,9 @@ class Login extends Component {
   };
 
   handleSubmit = (event) => {
-      // prevent default
-      event.preventDefault();
-      // Make a API call to my user auth service
-      // If success response
-      // Redirect to Shop
-    //   debugger;
-      this.props.history.push("/shop");
-      // If error
-      // Show Error
-  }
+    event.preventDefault();
+    this.props.history.push("/shop");
+  };
 
   render() {
     return (
@@ -41,9 +34,7 @@ class Login extends Component {
               <div className="col-sm-12 text-center">
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
-                    <label for="exampleInputEmail1">
-                      Email address
-                    </label>
+                    <label for="exampleInputEmail1">Email address</label>
                     <input
                       type="email"
                       className="form-control"
@@ -55,9 +46,7 @@ class Login extends Component {
                     />
                   </div>
                   <div className="form-group">
-                    <label for="exampleInputPassword1">
-                      Password
-                    </label>
+                    <label for="exampleInputPassword1">Password</label>
                     <input
                       type="password"
                       className="form-control"
