@@ -10,6 +10,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
+        <Route exact path="/fullstack-shop" component={Login} />
         <Route exact path="/shop" component={Shop} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/home" component={Home} />
