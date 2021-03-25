@@ -10,7 +10,7 @@ const Navbar = () => {
       id="navbar-darkgray"
     >
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
+        <Link to="/home" className="navbar-brand">
           Bigg's Store
         </Link>
         <button
@@ -37,7 +37,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-link">
+              <NavLink to="/login" className="nav-link">
                 Login
               </NavLink>
             </li>
